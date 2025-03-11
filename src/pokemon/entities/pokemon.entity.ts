@@ -15,6 +15,18 @@ export class Pokemon extends Document {
         index: true
     })
     no: number;
+
+    @Prop({
+        unique: true,
+        index: true
+    })
+    url: string;
+    
+    @Prop({
+        unique: true,
+        index: true
+    })
+    img: string;
 }
 
 export const PokemonSchema = SchemaFactory.createForClass( Pokemon );

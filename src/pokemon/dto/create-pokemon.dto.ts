@@ -10,4 +10,12 @@ export class CreatePokemonDto {
     @IsString()
     @MinLength(1)
     name: string;
+
+    @IsString()
+    @MinLength(1)
+    url: string;
+
+    @IsString()
+    @MinLength(1)
+    img: string;
 }
